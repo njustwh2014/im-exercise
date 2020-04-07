@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>cn.edu.seu.wh</groupId>
+        <artifactId>im-exercise</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <artifactId>common</artifactId>
+    <packaging>jar</packaging>
+    <url>http://www.eternalhorizon.cn/</url>
+    <inceptionYear>2018-Now</inceptionYear>
+    <licenses>
+        <license>
+            <name>Apache 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <id>wanghuan</id>
+            <name>Huan Wang</name>
+            <email>wanghuan199604@gmail.com</email>
+        </developer>
+    </developers>
+    <dependencies>
+        <!-- log4j 日志依赖        -->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.12</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+
+        </plugins>
+    </build>
+</project>
