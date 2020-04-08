@@ -35,3 +35,26 @@
 + Selector选择器的注册，以及选择器的查询。
 + SelectionKey选择键方法的使用。
 + 根据SelectionKey方法的四种IO事件类型，完成对应的IO处理。
+
+# day2: Reactor反应器模式实践
+
+## 实战1： 单线程Reactor反应器模式的实现
+
+使用单线程Reactor反应器模式，设计和实现一个EchoServer回显服务器。
+
+本环节的目标是掌握以下知识：
+
++ 单线程Reactor反应器模式的两个重要角色：Reactor反应器、Handler处理器的编写
++ SelectionKey选择键的两个重要方法：attach和attachment方法的使用
+
+## 实战2：多线程Reactor反应器模式
+
+使用多线程Reactor反应器模式，设计一个EchoServer回显服务器，主要的升级方式为：
+
++ 引入ThreadPool线程池，将负责IOHandler的执行，放入独立的线程池中，与负责服务监听和IO事件查询的反应器线程相隔离
++ 将反应器线程拆分为多个SubReactor子反应器线程，同时，引入多个Seletor选择器，每个子反应器线程负责监听一个选择器读取客户端的输入，回显到客户端
+
+本环节的目标是掌握以下知识：
+
++ 线程池的使用
++ 多线程反应器模式的实现
